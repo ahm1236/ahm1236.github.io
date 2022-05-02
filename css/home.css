@@ -201,3 +201,41 @@ margin-right: 20px;
 {
     border-bottom:3px #000000 solid ;
 }
+/*ahmed makboul update*/
+.home-page{
+    position: relative;
+}
+#loginplace{
+    text-align: end;
+    width: fit-content;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: block;
+  /*z-index: 6;*/
+  font-size: small;
+}
+#place{
+    text-align: end;
+    width: fit-content;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+  font-size: small;
+}
+#profile1{
+    position: absolute;
+    width: fit-content;
+   
+   
+   padding: 8px;
+   right: 131px;
+   top: 13px;
+   border-radius: 5px;
+   font-family: cursive;
+   display: none;
+}
+
+
+/* end*/
