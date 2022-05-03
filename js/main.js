@@ -70,8 +70,8 @@ function profile(){
   temp = JSON.parse(localStorage.user_login);
 for(s=0;s<data.length;s++){
     if(temp.email===data[s].email && temp.Password==data[s].password){
-        usernam.value="username : " + data[s].username;
-        email1.value="email : " + data[s].email;
+        usernam.value=  data[s].username;
+        email1.value= data[s].email;
       }
     }
 }

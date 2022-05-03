@@ -1,65 +1,27 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: 'Cairo', sans-serif;
-    /* font-family: 'Radio Canada', sans-serif; */
-    line-height: 1.42857143;
 
-}
-/* ---------------------------------------------------------------------------------------------------------------------------------------- */
-body{
-    margin:0px;
-    /* overflow: hidden; */
-    /* position: relative; */
-    box-sizing: border-box;
-}
-/* ---------------------------------------------------------------------------------------------------------------------------------------- */
-header
-{    
-    margin-top: 0px;
-    width: 100%;
-    border: 10px solid rgb(176, 156, 156);
-}
-/* ---------------------------------------------------------------------------------------------------------------------------------------- */
-footer
-{    
-    /* position:absolute ; */
-    /* bottom: 0; */
-    margin-bottom: 0px;
-    background-color: brown;
-    height: 50px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 10px solid rgb(176, 156, 156);
-
-}
-
-.col-white 
+.home .col-white 
 {
-    color: white;
+    color:var(--primary-color);
 }
 
-.txt-cen 
+.home .txt-cen 
 {
     text-align: center;
 }
 
-.home-intro 
+.home .home-intro 
 { 
     padding: 40px 0;
     background-color:#003580;
 }
 
-div
+.home div
 {
     display: block;
 }
 
 
-.container
+.home .container
 {
     padding-right: 15px;
     padding-left: 15px;
@@ -67,28 +29,28 @@ div
     margin-left: auto;
 }
 
-.h1, .h2, .h3, h1, h2, h3 {
+.home .h1, .h2, .h3, h1, h2, h3 {
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.fw-bold {
+.home .fw-bold {
     font-weight: bold;
 }
 
-.wave-line
+.home .wave-line
 {
     transform: rotate(-180deg);
     margin-top: -2px;
     fill:#003580;
 }
 
-.pb-60 
+.home .pb-60 
 {
     padding-bottom: 60px;
 }
 
-.pt-60 
+.home .pt-60 
 {
     padding-top: 60px;
 }
@@ -99,15 +61,15 @@ div
     gap: 50px;
 } */
 
-.in-bl
+.home .in-bl
 {
     display: inline-block;
 }
 
-.option
+.home .option
 {
     padding: 50px;
-    background-color:#003580;
+    background-color:var(--third-color);
     margin-top:20px ;
     margin-right: 75px;
     border-radius: 50px;
@@ -116,34 +78,35 @@ div
     box-shadow: 2px 1px 25px 0px rgb(1 1 1 / 75%);
 }
 
-a
+.home a
 {
     display: block;
     text-align: center;
     text-decoration: none;
     margin-top: 10px;
     font-size: 35px;
-    color: #ffffff;    
+    color: var(--primary-color);    
 }
 
-.services i
+.home .services i
 {
 font-size: 100px ;
+color: var(--secondry-color);
 }
 
-.our-services
+.home .our-services
 {
     margin-bottom: 20px;
 
 }
 
-.our-services h2
+.home .our-services h2
 {
     font-size:45px;
-    color: #000000;
+    color: var(--secondry-color);
 }
  
-.option:hover
+.home .option:hover
 {
     background-color:#101480;
     /* padding: 60px; */
@@ -152,12 +115,12 @@ font-size: 100px ;
 }
 
 
-a:hover
+.home a:hover
 {
    color: #00803e;
 }
 
-.features
+.home .features
 {
 background-color: beige;
 margin-top: 50px;
@@ -167,7 +130,7 @@ margin-left: 20px;
 margin-right: 20px;
 }
 
-.i-features
+.home .i-features
 {   
     display:inline-block ;
     margin: 10px;
@@ -177,7 +140,7 @@ margin-right: 20px;
 
 }
 
-.h-features i
+.home .h-features i
 {   
     font-size: 28px;
     color:#003580;
@@ -185,27 +148,27 @@ margin-right: 20px;
 
 }
 
-.i-features i
+.home .i-features i
 {   
     font-size: 40px;
-    color:#00385a;
+    color:var(--third-color);
     margin: 10px;
 } 
 
-.i-features:hover
+.home .i-features:hover
 {
     background-color:#80cfff;
 }
 
-.h-features h1
+.home .h-features h1
 {
-    border-bottom:3px #000000 solid ;
+    border-bottom:3px var(--third-color) solid ;
 }
 /*ahmed makboul update*/
-.home-page{
+.home .home-page{
     position: relative;
 }
-#loginplace{
+.home #loginplace{
     text-align: end;
     width: fit-content;
   position: absolute;
@@ -215,7 +178,7 @@ margin-right: 20px;
   /*z-index: 6;*/
   font-size: small;
 }
-#place{
+.home #place{
     text-align: end;
     width: fit-content;
   position: absolute;
@@ -224,7 +187,7 @@ margin-right: 20px;
   display: none;
   font-size: small;
 }
-#profile1{
+.home #profile1{
     position: absolute;
     width: fit-content;
    

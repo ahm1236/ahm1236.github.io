@@ -1,52 +1,92 @@
-.profiletable{
-    width: 400px;
-    height: 500px;
-    background-color: #EEe;
-    margin: 100px auto;
-    border-radius: 15px;
-    border: 2px solid darkblue;
+/*start profile*/
+.profile {
+    height: 700px;
     position: relative;
-
 }
-.backhome{
-    position:absolute ;
-    top: 440px;
-    left: 150px;
+.profile .container{
+    position: absolute;
+    height: 65%;
+    width: 45%;
+    border-bottom: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-.link{
-    font-size: large;
-
+.profile .container .card{
+    background-color: #32384f;
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    padding: 40px ;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
 }
-.circle{
-    border-radius: 100px; 
+.profile .container .card i{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #e6e6e6;
+    color: gray;
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    margin: auto;
+    padding: 20px 0;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.profile .container .card .username{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary-color);
+    height: 30%;
+    margin:30px ;
+    padding: 40px;
+    text-indent: 5px;
+    position: relative;
+}
+.profile .container .card .username #usernam,#email1{
     width: 160px;
-    height: 160px;
-    background-color: white;
+    margin-left: 10px;
+}
+.profile .container .card .username::before{
+    content: "username:";
+    text-transform: capitalize;
+    text-shadow: 2px 2px var(--third-color);
+}
+.profile .container .card .username::after{
+    content: "";
     position: absolute;
-    left: 120px;
-    top: 31px;
+    height: 1px;
+    width: 210px;
+    background-color: #a6a6a6;
+    top:95px;
 }
-#usernam{
-    width: 204px;
-    height: 32px;
-    position: absolute;
-    left: 99px;
-    top: 250px;
-    border-radius: 4px;
-    border: 2px solid darkblue;
+.profile .container .card .email{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--primary-color);
+    height: 30%;
+    padding: 10px;
+    text-indent: 5px;
+    position: relative;
 }
-#email1{
-    width: 204px;
-    height: 32px;
-    position: absolute;
-    left: 99px;
-    top: 300px;
-    border-radius: 4px;
-    border: 2px solid darkblue;
-    
+.profile .container .card .email::before{
+    content: "email:";
+    text-transform: capitalize;
+    text-shadow: 2px 2px  var(--third-color);
 }
-.photo{
-    width: 160px;
-    height: 160px;
-    border-radius: 100px;
+/*responsive*/
+@media(max-width:1140px){
+    .profile .container .card{
+        width: 300px;
+    }
 }
+@media(min-width:1140px) {
+    .profile .container .card{
+        width: 300px;
+    }
+}
+/*end profile*/
