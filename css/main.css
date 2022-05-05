@@ -52,7 +52,7 @@ a{
 }
 /*end global rules*/
 /*start header*/
-header{
+.header{
     padding: 20px;
 }
 .header .container{
@@ -154,21 +154,21 @@ header{
     border-radius: 30px;
 }
 @media (max-width:670px) {
-    .container .disabled{
+   .header .container .disabled{
         display: none;
     }
 }
 @media (max-width:580px) {
-    .container .disapled{
+  .header  .container .disapled{
         display: none;
     }
 }
 @media (max-width:508px) {
-    .container .logo i{
+   .header .container .logo i{
         font-size: 20px;
         margin-top: 10px;
     }
-    .container .logo p{
+   .header .container .logo p{
         font-size: 20px;
     }
 }

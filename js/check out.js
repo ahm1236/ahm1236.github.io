@@ -26,13 +26,7 @@ btn.onclick=function(){
 }
 x=per_data.length
 function checkout(){
-    
     fname1.value=per_data[x-1].fname;
     email1.value=per_data[x-1].email;
     adr1.value=per_data[x-1].adr;
-    console.log(fname1)
-}
-
-function submit(){
-    window.alert("confirmed");
 }

@@ -1,53 +1,3 @@
-* {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-transform: capitalize;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Cairo', sans-serif;
-}
-
-/* start container  */
-
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (max-width: 500px) {
-    .container {
-        width: 100%;
-    }
-}
-
-/* Small */
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-/* Medium */
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-/* Large */
-@media (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
-}
-
 .position-center {
     position: absolute;
     top: 50%;
@@ -80,19 +30,140 @@ nav .container {
 
 /* end nav  */
 /* ------------------------------------------------------------ */
-/* start section */
-
-.otel {
-    padding-top: 70px;
-    padding-bottom: 70px;
+/* start header  */
+.Hotels  .h{
+    color: var(--secondry-color);
 }
 
+.Hotels  .h{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.Hotels .h .container .info h1 {
+    font-size: 32px;
+}
+
+.Hotels .h .container .info p {
+    margin-top: -18px;
+    margin-bottom: 20px;
+}
+.Hotels .h .head{
+    color: var(--secondry-color);
+}
+
+.Hotels .h .container .info .search {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.Hotels .h .container .info .sear {
+    display: block;
+    width: 320px;
+    height: 42px;
+    font-size: 15px;
+    padding: 0 35px 0;
+}
+
+.Hotels .h .container .info .search .sub {
+    background-color: #0071c2;
+    padding: 5px 32px;
+    height: 42px;
+    color: white;
+    cursor: pointer;
+}
+
+.Hotels .h .container .info .search .sub:hover {
+    background-color: #015d9f;
+    border: solid 3px black;
+}
+
+.Hotels .h .container .info .check {
+    height: 50px;
+    margin-top: 7px;
+}
+
+.Hotels .container .info .check input {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.Hotels .h .container .info .check label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.Hotels .h .container .info .search::before {
+    content: '\f236';
+    font-family: FontAwesome;
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    color: #897f79
+}
+
+@media (max-width:582px) {
+    .Hotels .h .container .info h1 {
+        font-size: 25px;
+    }
+
+  .Hotels .h  .container .info p {
+        margin-top: -14px;
+        margin-bottom: 15px;
+    }
+
+  .Hotels .h .container .info .sear {
+        display: block;
+        width: 240px;
+        height: 35px;
+        font-size: 12px;
+        padding: 0 35px 0;
+    }
+
+  .Hotels .h .container .info .search::before {
+        top: 10px;
+        font-size: 15px;
+    }
+
+  .Hotels .h .container .info .search .sub {
+        background-color: #0071c2;
+        padding: 5px 20px;
+        height: 35px;
+    }
+}
+
+@media (max-width:500px) {
+  .Hotels .h .container .info h1 {
+        font-size: 20px;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+
+   .Hotels .h .container .info p {
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+}
+
+/* end header */
+/* ------------------------------------------------------------ */
+/* start section */
+
+.otel .container{
+    color: var(--secondry-color);
+}
 .otel .container .links {
     display: inline-block;
     font-size: 15px;
     text-decoration: none;
     position: relative;
     margin-bottom: 20px;
+}
+.otel .container .links a{
+    color: var(--secondry-color);
 }
 
 .otel .links a:first-child {
@@ -132,7 +203,6 @@ nav .container {
 
 .otel .links a:last-child {
     text-decoration: none;
-    color: black;
 }
 
 .otel .container h2 {
@@ -177,7 +247,12 @@ nav .container {
 .otel .container .all .card .info {
     width: calc(100% - 216px);
 }
-
+.otel .container .all .card .info .head a{
+    color: var(--secondry-color);
+}
+.otel .container .all .card .info .head h3{
+    padding-top:20px ;
+}
 .otel .container .all .card .info .first {
     display: flex;
     justify-content: space-between;
@@ -209,7 +284,7 @@ nav .container {
 }
 
 .otel .container .all .card .info .support span {
-    background-color: #003580;
+    background-color: var(--third-color);
     border-radius: 6px;
     width: 32px;
     height: 32px;
@@ -287,7 +362,7 @@ nav .container {
     color: white;
     text-decoration: none;
     padding: 0 20px;
-    background-color: #0071c2;
+    background-color: var(--third-color);
     border-radius: 3px;
     margin-top: 15px;
 }
@@ -411,14 +486,6 @@ nav .container {
 
 /* ------------------------------------------------------------ */
 /* start footer  */
-
-footer {
-    background-color: rgb(145, 145, 253);
-}
-
-footer .container {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer{
+    margin-bottom: 0;
 }
