@@ -3,6 +3,7 @@ let email=document.getElementById("email");
 let adr=document.getElementById("adr");
 let btn=document.getElementById("btn");
 
+
 let fname1=document.getElementById("fname1");
 let email1=document.getElementById("email1");
 let adr1=document.getElementById("adr1");
@@ -24,6 +25,8 @@ btn.onclick=function(){
     per_data.push(person);
     localStorage.setItem("person",JSON.stringify(per_data));
 }
+
+
 x=per_data.length
 function checkout(){
     fname1.value=per_data[x-1].fname;
