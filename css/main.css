@@ -134,16 +134,11 @@ a{
 }
 .header .links .drbdown .content a{
     display: block;
+    border: none;
+    color: white;
     padding: 7px ;
     text-align: left;
     transition: 0.5s ease-in-out;
-}
-.header .links .drbdown:hover .content{
-    display: block;
-}
-.header .links .drbdown:hover .content a{
-    border: none;
-    color: white;
 }
 .header .links .drbdown .content a:hover{
     transform: translateX(20px);

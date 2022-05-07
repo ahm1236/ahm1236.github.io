@@ -1,8 +1,8 @@
 .aida-hotel{
     background-color: var(--primary-color);
 }
-.container .logo{
-    margin-right: 800px;
+.container .logo .menu{
+    padding-top: 20px;
 }
  .dropdown {
     position: relative;
@@ -11,6 +11,7 @@
   }
  button{
       cursor: pointer;
+      font-size: 25px;
   }
   
   .aida-hotel .dropdown-content {

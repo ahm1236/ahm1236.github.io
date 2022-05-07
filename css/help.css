@@ -1,4 +1,6 @@
-
+:root{
+    scroll-behavior: smooth;
+}
 .help .help-intro
 {
     background-image:url(../images/intro-help.jpeg);
